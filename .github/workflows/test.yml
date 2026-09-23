@@ -1,0 +1,26 @@
+name: Threat Detection Integration Test
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  run-threat-detection-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Run Attack Simulator
+        run: python simulator.py
+
+      - name: Run Threat Detection Engine
+        run: python detector.py
