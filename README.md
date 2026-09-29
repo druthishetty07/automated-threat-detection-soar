@@ -5,6 +5,7 @@
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-CI%2FCD-blue.svg)
 
 An automated Threat Detection and Security Orchestration, Automation, and Response (SOAR) tool developed in Python. This project simulates real-world Security Operations Center (SOC) workflows by monitoring system authentication logs, identifying SSH brute-force attacks in real time, and triggering automated firewall remediation rules to isolate rogue IP addresses.
+Built with AI assistance; I tested, modified, and documented the results.
 
 ---
 
